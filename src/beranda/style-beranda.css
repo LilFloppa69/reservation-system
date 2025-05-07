@@ -1,0 +1,531 @@
+/* Mengatur margin dan padding default agar tidak ada jarak bawaan browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Mengatur tampilan navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+  background-color: #f5f5f5;
+}
+
+.short-border {
+  width: 85%; /* Adjust as needed */
+  height: 1px;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 120px; /* Mengatur ukuran logo */
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 30px; /* Memberi jarak antar item navbar */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+/*Mengatur warna dan garis pada navbar*/
+.nav-links li a.beranda {
+  font-weight: bold;
+  color: #ff007a;
+  border-bottom: 2px solid #ff007a;
+}
+
+/* Mengatur layout konten utama */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px; /* Memberi jarak dari tepi layar */
+  margin-top: 20px;
+}
+
+/* Mengatur teks dan tombol di bagian kiri */
+.left-content {
+  max-width: 100%;
+  flex: 2;
+}
+
+.right-content {
+  flex: 1;
+}
+
+.left-content h1 {
+  font-size: 55px;
+  color: #333;
+  font-weight: 900;
+  margin-bottom: 8px; /* Jarak antara judul dan paragraf */
+}
+
+.left-content .highlight {
+  color: #36acea;
+}
+
+.left-content p {
+  color: #555;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 40px; /* Jarak antara paragraf dan tombol */
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff007a;
+  color: white;
+  padding: 15px 30px; /* Ukuran tombol CTA */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 50;
+  border-radius: 50px; /* Membuat tombol menjadi melengkung */
+}
+
+.cta-button:hover {
+  background-color: #e6006b; /* Warna saat tombol di-hover */
+}
+
+/* Mengatur gambar di bagian kanan */
+.right-content img {
+  width: 400px;
+  text-align: left; /* Ukuran gambar anak */
+}
+
+/* Mengatur responsivitas agar layout tetap rapi di layar kecil */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-content img {
+    margin-top: 20px;
+  }
+
+  .left-content {
+    max-width: 100%;
+  }
+}
+
+/*APA ITU KIDSNESIA*/
+.second-section {
+  background-color: #f5f5f5; /* Warna latar belakang */
+  padding: 80px 100px;
+  margin-top: 60px; /* Memberi jarak dari section sebelumnya */
+}
+
+.second-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.second-section .left-content {
+  flex: 1;
+  text-align: center;
+}
+
+.second-section .rounded-image {
+  width: 400px;
+}
+
+.second-section .right-content {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.second-section h2 {
+  font-size: 50px;
+  color: #333;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.second-section .highlight {
+  color: #007bff; /* Warna biru untuk Kidsnesia */
+}
+
+.second-section p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.second-section .cta-btn {
+  background-color: #ff007f; /* Warna tombol pink */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.second-section .cta-btn:hover {
+  background-color: #e6006b;
+}
+
+/* Mengatur section program unggulan */
+.featured-programs {
+  padding: 100px 100px; /* Memberi jarak dari tepi */
+  background-color: #f5f5f5; /* Warna latar belakang */
+  text-align: center;
+}
+
+.featured-programs h2 {
+  font-size: 42px;
+  color: #333;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.featured-programs .highlight {
+  color: #36acea;
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 50px; /* Jarak antara subjudul dan grid program */
+}
+
+/* Mengatur grid untuk card program */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px; /* Jarak antar card */
+  margin-bottom: 80px;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 300px;
+  text-align: center;
+}
+
+.program-card:hover {
+  transform: translateY(-15px); /* Efek hover agar card sedikit naik */
+}
+
+.program-card img {
+  width: 60px;
+  margin-bottom: 20px; /* Jarak antara icon dan judul card */
+}
+
+.program-card h4 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Mengatur tombol CTA */
+.cta-button {
+  display: inline-block;
+  background-color: #ff007a;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ef2d7b;
+}
+
+/* Responsivitas */
+@media (max-width: 1024px) {
+  .program-grid {
+    grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom pada layar lebih kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .program-grid {
+    grid-template-columns: 1fr; /* Menjadi 1 kolom pada layar lebih kecil */
+  }
+}
+
+/* Kenapa Kidsnesia */
+.why-content {
+  display: flex;
+  align-items: center; /* Vertikal alignment */
+  justify-content: space-between; /* Mengatur jarak antara teks dan gambar */
+  padding: 50px 100px; /* Memberikan jarak dari tepi section */
+}
+
+.kiri-content {
+  flex: 2;
+}
+
+.kanan-content {
+  flex: 1;
+}
+
+.kiri-content h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: #333;
+}
+
+.kiri-content .highlight {
+  color: #36acea; /* Warna biru seperti di contoh */
+}
+
+.kiri-content p {
+  font-size: 25px;
+  color: #666;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.kiri-content i {
+  color: #ffcd29; /* Warna kuning untuk ikon bintang */
+  margin-right: 10px;
+}
+
+/* Mengatur tampilan gambar di sebelah kanan */
+.kanan-content img {
+  width: 500px; /* Ukuran gambar */
+  height: auto; /* Membiarkan tinggi proporsional */
+  padding: 15px; /* Memberi jarak di dalam lingkaran */
+}
+
+/* Responsivitas */
+@media (max-width: 1024px) {
+  .why-content {
+    flex-direction: column; /* Ubah layout jadi vertikal di layar kecil */
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .right-content img {
+    width: 300px; /* Gambar lebih kecil pada layar sempit */
+    margin-top: 20px;
+  }
+
+  .left-content h1 {
+    font-size: 36px; /* Ukuran font yang lebih kecil */
+  }
+
+  .left-content p {
+    font-size: 18px;
+  }
+}
+
+/* Section Testimoni */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonials h2 {
+  color: #333;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.highlight {
+  color: #36acea;
+}
+
+/* Wrapper untuk card */
+.testimonial-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden; /* Menyembunyikan overflow */
+  padding: 0 20px;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+/* Card Styling */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: calc(33.33% - 20px); /* 1/3 dari container, dikurangi gap */
+  flex-shrink: 0;
+  min-height: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  color: #36acea;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Menghilangkan scrollbar */
+.testimonial-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer Section */
+footer {
+  background: #f7287b; /* Pink Background */
+  color: #fff;
+}
+
+.subscribe-section {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.subscribe-section h2 {
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.subscribe-section form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe-section input {
+  padding: 20px;
+  width: 500px;
+  border: none;
+  border-radius: 50px;
+}
+
+.subscribe-section button {
+  padding: 10px 20px;
+  background: #0089d4; /* Blue Button */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer-content {
+  background: #0089d4; /* Blue Background */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 100px; /* Tetap ada padding */
+}
+
+.footer-info {
+  max-width: 500px;
+}
+
+.footer-info h3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.footer-info p {
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.social-icons a img {
+  width: 25px;
+  margin-right: 50px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-links .quick-links {
+  margin-right: auto; /* Geser ke kiri */
+}
+
+.footer-links h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
