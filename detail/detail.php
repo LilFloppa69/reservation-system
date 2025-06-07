@@ -45,57 +45,80 @@ $programKey = $_GET['program'] ?? null;
 </head>
 <body>
   <div class="container">
-    <header class="navbar">
-      <div class="navbar-content">
-        <div class="logo">
-          <img src="./Logo.png" alt="Logo Kidsnesia" />
-        </div>
-        <nav class="nav-links">
-          <a href="/index.html">Beranda</a>
-          <a href="/program.html">Program</a>
-          <a href="/hubungi.html">Hubungi</a>
-          <a href="#"><i class="fas fa-user-circle"></i></a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="program-detail">
-      <div class="header-banner">
-        <h4>DETAIL PROGRAM</h4>
-        <h1></h1>
-      </div>
-
-      <div class="program-content">
-        <div class="program-image">
-          <img src="" alt="" />
-        </div>
-        <div class="program-description">
-          <h2></h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="price-facility">
-        <h2>HARGA & FASILITAS</h2>
-        <div class="price-cards">
-          <div class="card">
-            <h3>Harga</h3>
-            <p></p>
-            <p></p>
+      <header class="navbar">
+        <div class="navbar-content">
+          <div class="logo">
+            <img src="./Logo.png" alt="Logo Kidsnesia" />
           </div>
-          <div class="card">
-            <h3>Fasilitas</h3>
-            <ul></ul>
+          <nav class="nav-links">
+            <a href="/index.html">Beranda</a>
+            <a href="/program.html">Program</a>
+            <a href="/hubungi.html">Hubungi</a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1c1c1c"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-user-round-icon lucide-circle-user-round"
+              >
+                <path d="M18 20a6 6 0 0 0-12 0" />
+                <circle cx="12" cy="10" r="4" />
+                <circle cx="12" cy="12" r="10" /></svg
+            ></a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="program-detail">
+        <div class="header-banner">
+          <h4>DETAIL PROGRAM</h4>
+          <h1>3D Printing</h1>
+        </div>
+
+        <div class="program-content">
+          <div class="program-image">
+            <img src="../assets/3dprint.png" alt="3D Printing Kids" />
+          </div>
+          <div class="program-description">
+            <h2>3D PRINTING</h2>
+            <p>
+              Di program ini, anak anak akan belajar membuat karakter maskot 3D yang dapat disesuaikan dengan daerah di Indonesia favorit mereka. Kegiatan ini tidak hanya mengembangkan kreativitas dan imajinasi anak, tapi juga mengenalkan teknologi cetak 3D secara menyenangkan. Mereka akan merancang bentuk, melihat proses pencetakan langsung, dan mewarnainya sendiri, sehingga hasil akhirnya benar benar menjadi karya mereka yang unik dan penuh kebanggaan.
+            </p>
           </div>
         </div>
-      </div>
 
-      <div class="cta-button">
-        <a id="btnReservasi" class="btn-reservasi">Reservasi Sekarang</a>
-      </div>
-    </section>
-  </div>
+        <div class="price-facility">
+          <h2>HARGA & FASILITAS</h2>
+          <div class="price-cards">
+            <div class="card">
+              <!-- Card 1: Pricing -->
+              <h3>Harga</h3>
+              <p>Rp 500.000 / Sesi</p>
+              <p>Durasi: 2 Jam</p>
+            </div>
+            <div class="card">
+              <!-- Card 2: Facilities -->
+              <h3>Fasilitas</h3>
+              <ul>
+                <li>Alat & bahan 3D Printing</li>
+                <li>Bimbingan mentor</li>
+                <li>Hasil karya dibawa pulang</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-button">
+          <a href="../register.php" class="btn-reservasi">Reservasi Sekarang</a>
+        </div>
+      </section>
+    </div>
 
   <script>
     const programData = <?php echo json_encode($programs); ?>;

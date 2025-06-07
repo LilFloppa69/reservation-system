@@ -78,8 +78,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px; /* Memberi jarak dari tepi layar */
-  margin-top: 20px;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .hero .text {
@@ -88,10 +89,9 @@ body {
 }
 
 .hero .text h1 {
-  font-size: 55px;
-  color: #333;
-  font-weight: 900;
-  margin-bottom: 8px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .hero .text .highlight {
@@ -129,15 +129,15 @@ body {
   display: inline-block;
   background-color: #ff007a;
   color: white;
-  padding: 15px 30px; /* Ukuran tombol CTA */
+  padding: 15px 30px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 50;
-  border-radius: 50px; /* Membuat tombol menjadi melengkung */
+  border-radius: 50px;
 }
 
 .cta-button:hover {
-  background-color: #e6006b; /* Warna saat tombol di-hover */
+  background-color: #e6006b; 
 }
 
 .section-title {
@@ -177,16 +177,17 @@ body {
 }
 .card {
   flex: 0 0 auto;
-  min-width: 300px; /* Ganti sesuai ukuran ideal */
+  max-width: 400px; /* Ganti sesuai ukuran ideal */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .card img {
-  width: 40%;
+  width: 100%;
   display: block;
   margin: 0 auto;
-  border-radius: 12%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .arrow {
@@ -214,11 +215,6 @@ body {
   padding: 1rem;
   text-align: center;
 }
-.card-content h3,
-.card-content p,
-.card-content button {
-  margin: 0.5rem 0;
-}
 .card-content button {
   padding: 0.5rem 1rem;
   background: #3fb6a8;
@@ -229,18 +225,29 @@ body {
 }
 
 .card-content .btn-program {
+  display: inline-block;
+  background-color: #ff007a;
+  color: white;
+  padding: 10px 25px;
   text-decoration: none;
-  padding: 5px 11px;
-  color: buttontext;
-  background-color: buttonface;
-  border-radius: 50%;
-  background-color: lightblue;
+  font-size: 15px;
+  font-weight: 50;
+  border-radius: 50px; 
+}
+
+.btn-program:hover {
+  background-color: #e6006b; 
 }
 
 .card h3 {
-  margin: 0.5rem 0;
-  color: #f03;
+  margin: 1px 0;
+  color: #ff007a;
 }
+.card p {
+  color: #333;
+  margin-bottom: 25px;
+}
+
 .card button {
   margin-top: 0.5rem;
   background: #f03;
@@ -251,51 +258,13 @@ body {
   cursor: pointer;
 }
 
-footer {
-  background: #f7287b; /* Pink Background */
-  color: #fff;
-}
-
-.subscribe-section {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.subscribe-section h2 {
-  margin-bottom: 25px;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.subscribe-section form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.subscribe-section input {
-  padding: 20px;
-  width: 500px;
-  border: none;
-  border-radius: 50px;
-}
-
-.subscribe-section button {
-  padding: 10px 20px;
-  background: #0089d4; /* Blue Button */
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 .footer-content {
-  background: #0089d4; /* Blue Background */
+  background: #0089d4;
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 70px 100px; /* Tetap ada padding */
+  align-items: center;
+  padding: 80px 10%;
 }
 
 .footer-info {
@@ -319,11 +288,11 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 100px;
+  gap: 150px;
 }
 
 .footer-links .quick-links {
-  margin-right: auto; /* Geser ke kiri */
+  margin-right: auto;
 }
 
 .footer-links h4 {
