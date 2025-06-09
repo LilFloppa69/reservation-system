@@ -18,8 +18,8 @@
             <a href="index.html" class="active">Beranda</a>
             <a href="program.html">Program</a>
             <a href="hubungi.html">Hubungi</a>
-            <a href="#"
-              ><svg
+            <a href="#">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -33,8 +33,9 @@
               >
                 <path d="M18 20a6 6 0 0 0-12 0" />
                 <circle cx="12" cy="10" r="4" />
-                <circle cx="12" cy="12" r="10" /></svg
-            ></a>
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </a>
           </nav>
         </div>
       </header>
@@ -43,7 +44,7 @@
         <div class="hero-text">
           <h1>Belajar Sambil Bermain di <span>Wisata Edukasi Kidsnesia</span></h1>
           <p>Selamat datang di dunia di mana imajinasi jadi nyata, dan belajar terasa seperti bermain. Inilah tempat di mana ide kecil bisa tumbuh besar, dan setiap tawa menjadi awal dari petualangan baru yang mendidik.</p>
-          <a href="#" class="cta-button">Daftar Sekarang</a>
+          <a href="./program.html" class="cta-button">Daftar Sekarang</a>
         </div>
         <div class="hero-image">
           <img src="assets/ANAK 1.png" alt="Anak-anak Belajar" />
@@ -122,9 +123,9 @@
           <h3>Wisata Edukasi Kidsnesia</h3>
           <p>Kidsnesia adalah taman wisata edukasi yang memberikan pengalaman belajar sambil bermain dengan program interaktif berbasis teknologi dan budaya.</p>
           <div class="social-icons">
-            <a href="#"><img src="#" alt="Facebook" /></a>
-            <a href="#"><img src="#" alt="Instagram" /></a>
-            <a href="#"><img src="#" alt="YouTube" /></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="youtube"></i></a>
           </div>
         </div>
         <div class="footer-links">
@@ -139,14 +140,18 @@
           <div class="program-links">
             <h4>Program</h4>
             <ul>
-              <li><a href="#">3D Printing</a></li>
-              <li><a href="#">Kreasi Sablon</a></li>
-              <li><a href="#">Programmer Cilik</a></li>
-              <li><a href="#">Aku Cinta Indonesia</a></li>
+              <li><a href="detail/detail.php?program=3d-printing">3D Printing</a></li>
+              <li><a href="detail/detail.php?program=sablon">Kreasi Sablon</a></li>
+              <li><a href="detail/detail.php?program=programmer">Programmer Cilik</a></li>
+              <li><a href="detail/detail.php?program=aci">Aku Cinta Indonesia</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

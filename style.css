@@ -328,6 +328,11 @@ section {
   margin-bottom: 25px;
 }
 
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
 .social-icons a img {
   width: 25px;
   margin-right: 50px;

@@ -60,12 +60,12 @@
       </section>
 
       <section class="filters">
-        <button class="active">Semua</button>
-        <button>3D Printing</button>
-        <button>Programmer</button>
-        <button>Sablon</button>
-        <button>ACI</button>
-        <button>Karya Kidos</button>
+        <button data-name="all" class="active">Semua</button>
+        <button data-name="3d-printing">3D Printing</button>
+        <button data-name="programmer">Programmer</button>
+        <button data-name="sablon">Sablon</button>
+        <button data-name="aci">ACI</button>
+        <button data-name="kk">Karya Kidos</button>
       </section>
 
       <div class="card-wrapper">
@@ -92,7 +92,7 @@
           <div class="card">
             <img src="assets/sablon.png" alt="Sablon" />
             <div class="card-content">
-              <h3>Programmer Cilik</h3>
+              <h3>Karya Sablon</h3>
               <p>Ekspresikan Diri Lewat Karya Kaos</p>
               <a href="detail/detail.php?program=sablon" class="btn-program">Daftar Sekarang</a>
             </div>
@@ -145,6 +145,7 @@
     </div>
   </body>
 
+  <script src="script.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <script>
     feather.replace();

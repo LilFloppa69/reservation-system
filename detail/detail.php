@@ -24,7 +24,7 @@ $programs = [
     ],
     "price" => "Rp 30.000 / Sesi",
     "duration" => "2 Jam",
-    "image" => "../assets/sablon.png",
+    "image" => "../assets/programmer.png",
     "facilities" => [
       "Laptop disediakan", "Modul coding visual", "Mentor profesional"
     ]
