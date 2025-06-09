@@ -137,7 +137,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #e6006b; 
+  background-color: #e6006b;
 }
 
 .section-title {
@@ -232,11 +232,11 @@ body {
   text-decoration: none;
   font-size: 15px;
   font-weight: 50;
-  border-radius: 50px; 
+  border-radius: 50px;
 }
 
 .btn-program:hover {
-  background-color: #e6006b; 
+  background-color: #e6006b;
 }
 
 .card h3 {
@@ -279,6 +279,11 @@ body {
 .footer-info p {
   line-height: 2;
   margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
 }
 
 .social-icons a img {

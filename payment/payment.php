@@ -3,14 +3,26 @@ $programs = [
   "3d-printing" => [
     "title" => "3D PRINTING",
     "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    "price" => 10000,
-    "image" => "../assets/Mencetak Karakter Lucu 3D.png"
+    "price" => 40000,
+    "image" => "../assets/3dprint.png"
   ],
   "programmer" => [
     "title" => "Programmer Cilik",
     "description" => "Mengajarkan logika pemrograman kepada anak-anak dengan cara yang menyenangkan. Gunakan alat visual seperti Scratch dan Blockly.",
     "price" => 30000,
     "image" => "../assets/programmer.png"
+  ],
+  "sablon" => [
+    "title" => "sablon",
+    "description" => "Ekspresikan dirimu melalui karya kaos. Tunjukkan kreativitasmu yang mencerminkan dirimu.",
+    "price" => 30000,
+    "image" => "../assets/sablon.png"
+  ],
+  "aci" => [
+    "title" => "Aku Cinta Indonesia",
+    "description" => "Aku Cinta Indonesia adalah program unggulan kidsnesia yang mana nantinya anak anak akan menggunakan pakaian adat yang udah disediakan dan mereka bakalan melakukan berbagai aktifitas edukasi mengenai budaya. Contohnya bakalan ada cerita menggunakan media interaktif petualangan nusantara, game edukasi budaya, VR Rumah adat, dan bakalan ada photobooth nya juga gitu",
+    "price" => 10000,
+    "image" => "../assets/AACI.png"
   ]
 ];
 
@@ -104,10 +116,12 @@ if (!$selectedProgram) {
   </body>
 
   <script>
+    
     // Dapatkan data dari PHP ke JS
     const program = {
       name: "<?= $selectedProgram['title'] ?>",
       price: "<?= $selectedProgram['price'] ?>",
+      user_id: localStorage.getItem("user_id") || 1,
     };
 
     // Tampilkan harga total
